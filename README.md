@@ -10,11 +10,21 @@ This repository does **not** reproduce the upstream regression coefficients, InV
 
 ## Software requirements
 
-- R (record the exact version used for the published analysis)
-- R packages: `terra`, `kohonen`, and `cluster`
-- Base/recommended R package: `stats`
+The SOM classification analysis was implemented in R.
 
-The script writes `R_Session_Info.txt` after a successful execution. Retain this file with the archived analysis materials to document the actual R and package versions.
+The following software environment is currently configured:
+
+| Software / Package | Version |
+|---|---|
+| R | 4.5.2 |
+| terra | 1.8.93 |
+| kohonen | 3.0.13 |
+| cluster | 2.1.8.1 |
+| Operating system | Windows 11 x64 |
+
+The SOM and K-means analyses use a fixed random seed of 2020.
+
+The exact R session information can be recorded using `sessionInfo()`.
 
 ## Input files
 
