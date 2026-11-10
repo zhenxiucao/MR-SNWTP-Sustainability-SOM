@@ -1,12 +1,11 @@
 # MR-SNWTP Sustainability SOM
-
-R code for self-organizing map (SOM) clustering and K-means classification of ecological, agricultural, and economic sustainability response patterns in the recipient region of the Middle Route of China's South-to-North Water Transfer Project (MR-SNWTP).
+Research code for SOM-based classification of sustainability response patterns using ecological risk (ERI), grain production (GP) and economic output (GDP), together with spatial-block cluster-robust multinomial logistic regression for pathway association analysis in the MR-SNWTP recipient region.
 
 ## Scope
 
 `SOM_classification.R` processes **three annual response-coefficient rasters** (ecological risk index, grain production, and GDP) for each of **2010, 2015, and 2020**. It trains a separate SOM for each year, groups the SOM codebook vectors using K-means, exports cluster maps, and produces diagnostics for cluster-number selection and initialization stability.
 
-This repository does **not** reproduce the upstream regression coefficients, InVEST simulations, constraint-envelope analysis, multinomial logistic regression, hotspot analysis, enrichment analysis, or landscape-fragmentation analysis. Those steps were conducted separately.
+This repository provides code for SOM-based sustainability pathway classification and spatial-block cluster-robust multinomial logistic regression. It does not reproduce the upstream response-coefficient rasters, InVEST simulations, constraint-envelope analysis, hotspot analysis, enrichment analysis or landscape-fragmentation analysis. These steps were conducted separately.
 
 ## Software requirements
 
@@ -101,8 +100,10 @@ This script uses the **native geometry of the ERI input raster** and records its
 
 ## Data and reuse
 
-The repository's code and the data required to reproduce its outputs have different availability requirements. Do not redistribute third-party or restricted data without authorization. Add a public or reviewer-accessible input dataset archive and an explicit software license, with the consent of all relevant authors, before claiming complete independent reproducibility or permissive reuse.
+The repository's code and the data required to reproduce its outputs have different availability requirements. Do not redistribute third-party or restricted data without authorization. The source code is released under the MIT License (see LICENSE). The input datasets required to reproduce the analyses are subject to their respective data-access and redistribution conditions. Users must obtain the necessary inputs from their original sources or authorized providers.
 
 ## Citation
 
-A persistent Zenodo DOI and a citation to the associated manuscript can be added once the authors have confirmed the code version, pathway mappings, and public release. Do not cite a DOI before the archive exists.
+The software archive (v1.0.0) is available on Zenodo:
+https://doi.org/10.5281/zenodo.23883896
+This DOI identifies the archived v1.0.0 release. The latest development version is available from the GitHub repository. When citing the software used for a specific analysis, the corresponding archived version should be referenced..
